@@ -1,3 +1,36 @@
-/* body {
+.text-center {
+    background-color: rgb(252, 61, 33);
+}
+.planet-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left {
+    margin-left: 50px;
     text-align: center;
-} */
+}
+.right {
+    margin: 50px;
+    max-width: 50%;
+}
+.home-img {
+    margin: 50px;
+}
+img {
+    margin-bottom: 100px;
+}
+footer {
+    background-color: rgb(11, 61, 145);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+}
+footer p {
+    color: rgb(239,239,239);
+}

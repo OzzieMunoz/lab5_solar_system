@@ -6,16 +6,28 @@
 </head>
 
 <body>
-
     <%- include("partials/nav.ejs") %>
 
-    <h2> <%=planet_name%> </h2>
+    <div class="planet-container">
+        <div class="left">
+            <h2> <%=planet_name%> </h2>
+            <img src="<%=planetInfo.image %>" width="300">
+        </div>
 
-    <%=planetInfo.description%>
-    <br>
-    <img src="<%=planetInfo.image %>" width="300">
-
-
+        <div class="right">
+            Description: <%=planetInfo.description%><br>
+            Definition: <%=planetInfo.def%><br>
+            Moons: <%=planetInfo.moons%><br>
+            Distance From the Sun: <%=planetInfo. distanceFromSun%><br>
+            Year Length: <%=planetInfo.yearLength%><br>
+            Radius: <%=planetInfo.radius%><br>
+            One Earth Day: <%=planetInfo. oneEarthDay%>
+        </div>
+    </div>
 </body>
+
+<footer>
+    <%- include("partials/footer.ejs") %>
+</footer>
 
 </html>
